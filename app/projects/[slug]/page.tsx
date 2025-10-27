@@ -7,7 +7,8 @@ import { Project } from '@/types'
 export async function generateStaticParams() {
   const projects = await getProjects()
   
-  return projects.map((project) => ({
+  // Changed: Added explicit type annotation to project parameter
+  return projects.map((project: Project) => ({
     slug: project.slug,
   }))
 }
