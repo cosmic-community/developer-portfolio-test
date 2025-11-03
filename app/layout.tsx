@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Developer Portfolio | Full Stack Web Developer',
   description: 'Professional portfolio showcasing web development projects, skills, and experience in React, Node.js, TypeScript, and modern web technologies.',
   keywords: 'web developer, full stack developer, React, Node.js, TypeScript, portfolio',
+  icons: {
+    icon: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({
