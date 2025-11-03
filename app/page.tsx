@@ -30,9 +30,9 @@ export default async function HomePage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 text-white py-20 px-4 md:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Full Stack Developer
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl">
@@ -42,7 +42,7 @@ export default async function HomePage() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               View My Work
             </a>
@@ -57,7 +57,7 @@ export default async function HomePage() {
       </section>
 
       {/* Featured Projects */}
-      <section id="projects" className="py-16 px-4 bg-white">
+      <section id="projects" className="py-16 px-4 md:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-2 text-gray-900">Featured Projects</h2>
           <p className="text-gray-600 mb-12">Recent work and side projects</p>
@@ -82,7 +82,7 @@ export default async function HomePage() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-16 px-4 bg-gray-50">
+      <section id="skills" className="py-16 px-4 md:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-2 text-gray-900">Skills & Technologies</h2>
           <p className="text-gray-600 mb-12">Technical expertise across the full stack</p>
@@ -109,7 +109,7 @@ export default async function HomePage() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-16 px-4 bg-white">
+      <section id="experience" className="py-16 px-4 md:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-2 text-gray-900">Work Experience</h2>
           <p className="text-gray-600 mb-12">Professional career journey</p>
@@ -124,7 +124,7 @@ export default async function HomePage() {
 
       {/* Testimonials Section */}
       {testimonials.length > 0 && (
-        <section id="testimonials" className="py-16 px-4 bg-gray-50">
+        <section id="testimonials" className="py-16 px-4 md:px-6 lg:px-8 bg-gray-50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-2 text-gray-900">Client Testimonials</h2>
             <p className="text-gray-600 mb-12">What clients say about working with me</p>
@@ -140,7 +140,7 @@ export default async function HomePage() {
 
       {/* All Projects Section */}
       {projects.length > 0 && (
-        <section id="all-projects" className="py-16 px-4 bg-white">
+        <section id="all-projects" className="py-16 px-4 md:px-6 lg:px-8 bg-white">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-2 text-gray-900">All Projects</h2>
             <p className="text-gray-600 mb-12">Complete portfolio of work</p>
@@ -155,7 +155,7 @@ export default async function HomePage() {
       )}
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+      <section id="contact" className="py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
           <p className="text-xl mb-8 text-blue-100">
@@ -164,7 +164,7 @@ export default async function HomePage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="mailto:hello@example.com"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               Send Email
             </a>
@@ -181,7 +181,7 @@ export default async function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 py-8 px-4">
+      <footer className="bg-gray-900 text-gray-300 py-8 px-4 md:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <p>&copy; {new Date().getFullYear()} Developer Portfolio. Built with Next.js and Cosmic.</p>
         </div>
