@@ -57,7 +57,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
 
       {testimonial.metadata?.testimonial_text && (
         <p className="text-gray-700 mb-4 italic">
-          "{testimonial.metadata.testimonial_text}"
+          &ldquo;{testimonial.metadata.testimonial_text}&rdquo;
         </p>
       )}
 

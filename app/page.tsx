@@ -160,9 +160,9 @@ export default async function HomePage() {
         {/* Contact Section */}
         <section id="contact" className="py-16 px-4 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
+            <h2 className="text-4xl font-bold mb-6">Let&apos;s Work Together</h2>
             <p className="text-xl mb-8 text-blue-100">
-              Have a project in mind? I'd love to hear about it.
+              Have a project in mind? I&apos;d love to hear about it.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
