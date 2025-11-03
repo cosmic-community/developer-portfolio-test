@@ -36,6 +36,11 @@ html {
   background: #555;
 }
 
+/* Hero section gradient enhancement */
+.hero-gradient {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #7c3aed 100%);
+}
+
 /* Markdown content styles */
 .markdown-content h1 {
   @apply text-3xl font-bold mb-4 mt-6;
