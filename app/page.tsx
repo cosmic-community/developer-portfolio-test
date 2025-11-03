@@ -28,7 +28,7 @@ export default async function HomePage() {
   const featuredProjects = (projects as Project[]).filter(p => p.metadata?.featured)
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 text-white py-20 px-4 md:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
@@ -164,7 +164,7 @@ export default async function HomePage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="mailto:hello@example.com"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              className="bg-blue-600 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center"
             >
               Send Email
             </a>
