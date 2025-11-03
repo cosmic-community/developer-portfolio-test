@@ -9,7 +9,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const rating = parseInt(testimonial.metadata?.rating?.key || '5')
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 hover:shadow-lg transition-all duration-200">
       <div className="flex items-center gap-4 mb-4">
         {testimonial.metadata?.client_photo && (
           <img
@@ -22,11 +22,11 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
         )}
         
         <div>
-          <h3 className="text-lg font-bold text-gray-900">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white">
             {testimonial.metadata?.client_name}
           </h3>
           {testimonial.metadata?.client_role && (
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 dark:text-gray-400">
               {testimonial.metadata.client_role}
               {testimonial.metadata?.company && ` at ${testimonial.metadata.company}`}
             </p>
@@ -41,7 +41,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
           return (
             <svg
               key={index}
-              className={`w-5 h-5 ${filled ? 'text-yellow-400' : 'text-gray-300'}`}
+              className={`w-5 h-5 ${filled ? 'text-yellow-400' : 'text-gray-300 dark:text-gray-600'}`}
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -56,7 +56,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
       </div>
 
       {testimonial.metadata?.testimonial_text && (
-        <p className="text-gray-700 mb-4 italic">
+        <p className="text-gray-700 dark:text-gray-300 mb-4 italic">
           &ldquo;{testimonial.metadata.testimonial_text}&rdquo;
         </p>
       )}
@@ -64,7 +64,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
       {testimonial.metadata?.related_project && (
         <Link
           href={`/projects/${testimonial.metadata.related_project.slug}`}
-          className="inline-block text-blue-600 hover:text-blue-800 font-medium text-sm"
+          className="inline-block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm"
         >
           View Related Project →
         </Link>

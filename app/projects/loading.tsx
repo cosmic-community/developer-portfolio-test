@@ -1,9 +1,9 @@
 export default function ProjectLoading() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white border-b border-gray-200">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+      <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-6xl mx-auto px-4 py-6">
-          <div className="h-6 w-32 bg-gray-200 rounded animate-pulse"></div>
+          <div className="h-6 w-32 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
         </div>
       </header>
 
@@ -16,7 +16,7 @@ export default function ProjectLoading() {
 
       <section className="py-8 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="w-full h-96 bg-gray-200 rounded-lg animate-pulse"></div>
+          <div className="w-full h-96 bg-gray-200 dark:bg-gray-700 rounded-lg animate-pulse"></div>
         </div>
       </section>
     </div>
